@@ -53,7 +53,4 @@
 
 <style scoped>
 @import url("~/assets/css/home/index.css");
-@import url("~/assets/css/home/font-awesome/css/font-awesome.min.css");
-@import url("~/assets/css/home/ionicons/css/ionicons.min.css");
-@import url("~/assets/css/home/owlcarousel/assets/owl.carousel.min.css");
 </style>
