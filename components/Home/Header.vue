@@ -1,5 +1,10 @@
 <template>
-  <header id="header">
+  <header 
+    id="header"
+    :class="{
+      'header-scrolled': isShow
+    }"
+    >
     <div class="container-fluid">
       <div id="logo" class="pull-left">
         <h1><a href="#intro" class="scrollto">BizPage</a></h1>
@@ -20,7 +25,23 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isShow: false,
+    }
+  },
+  beforeMount() {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        this.isShow = true;
+      } else {
+        this.isShow = false;
+      }
+      console.log(window.scrollY);
+    })
+  }
+};
 </script>
 
 <style scoped>
