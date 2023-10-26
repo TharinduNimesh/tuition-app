@@ -10,3 +10,4 @@ export default defineNuxtConfig({
     '~/assets/css/home/lightbox/css/lightbox.min.css'
   ],
 })
+
