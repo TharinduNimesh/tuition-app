@@ -9,5 +9,6 @@ export default defineNuxtConfig({
     '~/assets/css/home/owlcarousel/assets/owl.carousel.min.css',
     '~/assets/css/home/lightbox/css/lightbox.min.css'
   ],
+  modules: ['nuxt-icon']
 })
 

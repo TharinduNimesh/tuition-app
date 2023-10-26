@@ -2,7 +2,7 @@
   <header 
     id="header"
     :class="{
-      'header-scrolled': isShow
+      'header-scrolled': isScrolled
     }"
     >
     <div class="container-fluid">
@@ -12,7 +12,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <HomeHeaderItem name="Home" path="#intro" isActive="true" />
+          <HomeHeaderItem name="Home" path="#intro" :isActive="true" />
           <HomeHeaderItem name="About Us" path="#about" />
           <HomeHeaderItem name="Services" path="#services" />
           <HomeHeaderItem name="Portfolio" path="#portfolio" />
@@ -26,21 +26,7 @@
 
 <script>
 export default {
-  data() {
-    return {
-      isShow: false,
-    }
-  },
-  beforeMount() {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        this.isShow = true;
-      } else {
-        this.isShow = false;
-      }
-      console.log(window.scrollY);
-    })
-  }
+  inject: ["isScrolled"]
 };
 </script>
 

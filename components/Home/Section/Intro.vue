@@ -1,11 +1,7 @@
 <template>
   <section id="intro">
     <div class="intro-container">
-      <div
-        id="introCarousel"
-        class="carousel slide carousel-fade"
-        data-ride="carousel"
-      >
+      <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators"></ol>
 
         <div class="carousel-inner" role="listbox">
@@ -21,30 +17,12 @@
           </HomeCarousel>
         </div>
 
-        <a
-          class="carousel-control-prev"
-          href="#introCarousel"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon ion-chevron-left"
-            aria-hidden="true"
-          ></span>
-          <span class="sr-only">Previous</span>
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <Icon class="icon" name="quill:inline-left" />
         </a>
 
-        <a
-          class="carousel-control-next"
-          href="#introCarousel"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon ion-chevron-right"
-            aria-hidden="true"
-          ></span>
-          <span class="sr-only">Next</span>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <Icon class="icon" name="quill:inline-right" />
         </a>
       </div>
     </div>
@@ -53,4 +31,8 @@
 
 <style scoped>
 @import url("~/assets/css/home/index.css");
+
+.icon {
+  font-size: 4rem;
+}
 </style>
