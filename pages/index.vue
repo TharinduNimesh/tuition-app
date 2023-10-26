@@ -20,6 +20,8 @@ useHead({
 
       <HomeSectionClients />
 
+      <HomeSectionPricing />
+
       <HomeSectionTestimonials />
 
       <HomeSectionContact />
