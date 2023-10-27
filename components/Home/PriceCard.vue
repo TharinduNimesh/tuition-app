@@ -54,7 +54,7 @@ export default {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -90,7 +90,7 @@ export default {
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   border-radius: 6px;
   border: 1px solid rgb(177, 177, 177);
