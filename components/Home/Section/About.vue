@@ -18,9 +18,7 @@
           <div class="about-col h-100">
             <div class="img">
               <img src="/img/about-mission.jpg" alt="" class="img-fluid" />
-              <div class="icon">
-                <i class="ion-ios-speedometer-outline"></i>
-              </div>
+              <Icon class="about-icon" name="ic:outline-speed" />
             </div>
             <h2 class="title"><a href="#">Our Mission</a></h2>
             <p>
@@ -36,7 +34,7 @@
           <div class="about-col h-100">
             <div class="img">
               <img src="/img/about-plan.jpg" alt="" class="img-fluid" />
-              <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              <Icon class="about-icon" name="ic:outline-list-alt" />
             </div>
             <h2 class="title"><a href="#">Our Plan</a></h2>
             <p>
@@ -52,7 +50,7 @@
           <div class="about-col h-100">
             <div class="img">
               <img src="/img/about-vision.jpg" alt="" class="img-fluid" />
-              <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              <Icon class="about-icon" name="ic:outline-visibility" />
             </div>
             <h2 class="title"><a href="#">Our Vision</a></h2>
             <p>

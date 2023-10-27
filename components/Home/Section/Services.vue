@@ -21,7 +21,9 @@
           class="col-lg-4 col-md-6 box wow bounceInUp"
           data-wow-duration="1.4s"
         >
-          <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+          <div class="icon">
+            <Icon name="ph:money-light" class="service-icon" />
+          </div>
           <h4 class="title"><a href="">Fee Tracking</a></h4>
           <p class="description">
             Manage student payments, generate invoices, and monitor financial
@@ -32,7 +34,9 @@
           class="col-lg-4 col-md-6 box wow bounceInUp"
           data-wow-duration="1.4s"
         >
-          <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+          <div class="icon">
+            <Icon name="ph:clipboard-text-light" class="service-icon" />
+          </div>
           <h4 class="title"><a href="">Class Scheduling</a></h4>
           <p class="description">
             Create, update, and share class schedules for an organized and
@@ -43,7 +47,9 @@
           class="col-lg-4 col-md-6 box wow bounceInUp"
           data-wow-duration="1.4s"
         >
-          <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+          <div class="icon">
+            <Icon name="ic:outline-list-alt" class="service-icon" />
+          </div>
           <h4 class="title"><a href="">Attendance Management</a></h4>
           <p class="description">
             Track student attendance and identify trends to enhance overall
@@ -56,7 +62,10 @@
           data-wow-duration="1.4s"
         >
           <div class="icon">
-            <i class="ion-ios-speedometer-outline"></i>
+            <Icon
+              name="material-symbols:android-messages-outline"
+              class="service-icon"
+            />
           </div>
           <h4 class="title"><a href="">Communication Hub</a></h4>
           <p class="description">
@@ -69,7 +78,12 @@
           data-wow-delay="0.1s"
           data-wow-duration="1.4s"
         >
-          <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+          <div class="icon">
+            <Icon
+              name="material-symbols:insert-chart-outline-sharp"
+              class="service-icon"
+            />
+          </div>
           <h4 class="title"><a href="">Performance Analytics</a></h4>
           <p class="description">
             Analyze student progress, identifying areas for improvement and
@@ -81,7 +95,12 @@
           data-wow-delay="0.1s"
           data-wow-duration="1.4s"
         >
-          <div class="icon"><i class="ion-ios-people-outline"></i></div>
+          <div class="icon">
+            <Icon
+              name="material-symbols:switch-account-outline"
+              class="service-icon"
+            />
+          </div>
           <h4 class="title"><a href="">Enrollment Management</a></h4>
           <p class="description">
             Simplify the student onboarding process with easy enrollment and

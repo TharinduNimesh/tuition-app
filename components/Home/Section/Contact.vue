@@ -13,7 +13,7 @@
       <div class="row contact-info">
         <div class="col-md-4">
           <div class="contact-address">
-            <i class="ion-ios-location-outline"></i>
+            <Icon class="icon" name="ic:sharp-location-on" />
             <h3>Address</h3>
             <address>693/3, Gonawala Road, Kelaniya, Sri Lanka.</address>
           </div>
@@ -21,7 +21,7 @@
 
         <div class="col-md-4">
           <div class="contact-phone">
-            <i class="ion-ios-telephone-outline"></i>
+            <Icon class="icon" name="ic:baseline-local-phone" />
             <h3>Phone Number</h3>
             <p><a href="tel:+94705321516">+94 70 532 1516</a></p>
           </div>
@@ -29,7 +29,7 @@
 
         <div class="col-md-4">
           <div class="contact-email">
-            <i class="ion-ios-email-outline"></i>
+            <Icon class="icon" name="ic:baseline-email" />
             <h3>Email</h3>
             <p><a href="mailto:contact@eversoft.cf">contact@eversoft.lk</a></p>
           </div>

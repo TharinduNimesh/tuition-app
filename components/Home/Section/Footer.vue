@@ -16,19 +16,39 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
               <li>
-                <i class="ion-ios-arrow-right"></i> <a href="#">About us</a>
+                <Icon
+                  name="material-symbols:arrow-forward-ios-rounded"
+                  class="footer-links-icon"
+                />
+                <a href="#">Home</a>
               </li>
               <li>
-                <i class="ion-ios-arrow-right"></i> <a href="#">Services</a>
+                <Icon
+                  name="material-symbols:arrow-forward-ios-rounded"
+                  class="footer-links-icon"
+                />
+                <a href="#">About Us</a>
               </li>
               <li>
-                <i class="ion-ios-arrow-right"></i>
+                <Icon
+                  name="material-symbols:arrow-forward-ios-rounded"
+                  class="footer-links-icon"
+                />
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <Icon
+                  name="material-symbols:arrow-forward-ios-rounded"
+                  class="footer-links-icon"
+                />
                 <a href="#">Terms of service</a>
               </li>
               <li>
-                <i class="ion-ios-arrow-right"></i>
+                <Icon
+                  name="material-symbols:arrow-forward-ios-rounded"
+                  class="footer-links-icon"
+                />
                 <a href="#">Privacy policy</a>
               </li>
             </ul>
@@ -45,13 +65,18 @@
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"
-                ><i class="fa fa-google-plus"></i
-              ></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="twitter">
+                <Icon name="fa6-brands:facebook-f" />
+              </a>
+              <a href="#" class="twitter">
+                <Icon name="fa6-brands:instagram" />
+              </a>
+              <a href="#" class="twitter">
+                <Icon name="fa6-brands:youtube" />
+              </a>
+              <a href="#" class="twitter">
+                <Icon name="fa6-brands:linkedin-in" />
+              </a>
             </div>
           </div>
 

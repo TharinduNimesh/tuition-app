@@ -13,14 +13,14 @@
         <button
           class="toggle-button btn btn-primary"
           @click="togglePrices('annually')"
-          :disabled="category === 'annually'"
+          :disabled="isAnnual"
         >
           Annually
         </button>
         <button
           class="toggle-button btn btn-primary"
           @click="togglePrices('monthly')"
-          :disabled="category === 'monthly'"
+          :disabled="!isAnnual"
         >
           Monthly
         </button>
@@ -47,7 +47,7 @@ import cards from "~/assets/css/home/packages";
 export default {
   data() {
     return {
-      category: "annually",
+      category: "monthly",
       cards,
     };
   },
@@ -56,6 +56,11 @@ export default {
       this.category = category;
     },
   },
+  computed: {
+    isAnnual() {
+      return this.category === "annually";
+    },
+  }
 };
 </script>
 
