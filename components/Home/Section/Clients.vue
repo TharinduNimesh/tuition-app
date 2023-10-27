@@ -5,7 +5,7 @@
         <h3>Our Clients</h3>
       </header>
       <div class="clients-carousel">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center gap-3">
           <img src="img/clients/client-1.png" />
           <img src="img/clients/client-2.png" />
           <img src="img/clients/client-3.png" />

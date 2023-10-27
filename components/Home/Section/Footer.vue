@@ -4,12 +4,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>BizPage</h3>
+            <h3>GuruGo</h3>
             <p>
-              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
-              nada terra videa magna derita valies darta donna mare fermentum
-              iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
-              fermentum leo. Amet volutpat consequat mauris nunc congue.
+              GuruGo is a comprehensive tuition management system designed to
+              revolutionize education administration. It offers a seamless blend
+              of fee management, class scheduling, attendance tracking, robust
+              communication tools, and efficient enrollment management.
             </p>
           </div>
 
@@ -37,11 +37,11 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br />
-              New York, NY 535022<br />
-              United States <br />
-              <strong>Phone:</strong> +1 5589 55488 55<br />
-              <strong>Email:</strong> info@example.com<br />
+              693/3, Kelaniya <br />
+              Gampaha, 11600<br />
+              Sri Lanka <br />
+              <strong>Phone:</strong> +94 70 532 1516<br />
+              <strong>Email:</strong> contact@eversoft.lk<br />
             </p>
 
             <div class="social-links">
@@ -58,9 +58,7 @@
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>
-              Tamen quem nulla quae legam multos aute sint culpa legam noster
-              magna veniam enim veniam illum dolore legam minim quorum culpa
-              amet magna export quem marada parida nodela caramase seza.
+              Subscribe to our newsletter and we will inform you about latest
             </p>
             <form action="" method="post">
               <input type="email" name="email" /><input
@@ -75,11 +73,11 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
+        &copy; Copyright <strong>GuruGo</strong>. All Rights Reserved.
       </div>
       <div class="credits">
-        Best <a href="https://bootstrapmade.com/">Bootstrap Templates</a> by
-        BootstrapMade
+        Designed & Developed by
+        <a href="https://www.eversoft.lk/">Eversoft IT Solutions.</a>
       </div>
     </div>
   </footer>
@@ -89,5 +87,4 @@
 export default {};
 </script>
 
-<style>
-</style>
+<style></style>

@@ -1,6 +1,13 @@
 <script setup>
 useHead({
-  title: "Tuition Master | Home",
+  title: "GuruGO | Tuition Management System",
+  meta: [
+    {
+      name: "description",
+      content:
+        "GuruGo is the all-in-one tuition management system, empowering teachers and institutions to simplify tuition, scheduling, and student performance tracking for educational success.",
+    },
+  ],
 });
 </script>
 <template>
@@ -10,11 +17,11 @@ useHead({
     <HomeSectionIntro />
 
     <main id="main">
-      <HomeSectionServices />
+      <HomeSectionFeatures />
 
       <HomeSectionAbout />
 
-      <HomeSectionService />
+      <HomeSectionServices />
 
       <HomeSectionFacts />
 
@@ -30,12 +37,12 @@ useHead({
 
     <HomeSectionFooter />
 
-    <a 
-      href="#" 
+    <a
+      href="#"
       class="back-to-top"
       :class="{
         'opacity-0': !isShow,
-        'opacity-1': isShow
+        'opacity-1': isShow,
       }"
     >
       <Icon name="quill:inline-up" class="icon" />
@@ -44,25 +51,25 @@ useHead({
 </template>
 
 <script>
-import { computed } from 'vue';
+import { computed } from "vue";
 
 export default {
   data() {
     return {
       isShow: false,
-    }
+    };
   },
   beforeMount() {
     window.addEventListener("scroll", () => {
       this.isShow = window.scrollY > 100;
       let domElement = this.$el;
-    })
+    });
   },
   provide() {
     return {
       isScrolled: computed(() => this.isShow),
-    }
-  }
+    };
+  },
 };
 </script>
 
@@ -72,7 +79,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .back-to-top:hover {

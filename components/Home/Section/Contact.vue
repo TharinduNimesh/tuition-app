@@ -4,8 +4,9 @@
       <div class="section-header">
         <h3>Contact Us</h3>
         <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque
+          Our Contact Us page is your direct line to our support team. Reach out
+          for assistance, inquiries, or feedback. We're here to help you with
+          any questions or concerns.
         </p>
       </div>
 
@@ -30,7 +31,7 @@
           <div class="contact-email">
             <i class="ion-ios-email-outline"></i>
             <h3>Email</h3>
-            <p><a href="mailto:contact@eversoft.cf">contact@eversoft.cf</a></p>
+            <p><a href="mailto:contact@eversoft.cf">contact@eversoft.lk</a></p>
           </div>
         </div>
       </div>

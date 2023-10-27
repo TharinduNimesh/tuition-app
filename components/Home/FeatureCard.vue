@@ -1,6 +1,6 @@
 <template>
   <div class="col-lg-4 box">
-    <i :class="icon"></i>
+    <Icon :name="icon" class="featured-icon" />
     <h4 class="title">
       <a href="">{{ title }}</a>
     </h4>

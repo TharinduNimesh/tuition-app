@@ -1,5 +1,5 @@
 <template>
-    <div class="w-100 py-1 bg-danger text-light d-flex justify-content-center align-items-center">
+    <div class="w-100 py-1 bg-primary text-light d-flex justify-content-center align-items-center">
         <Icon name="ic:baseline-warning-amber" />
         <span>This Website Still Under Maintenance</span>
     </div>

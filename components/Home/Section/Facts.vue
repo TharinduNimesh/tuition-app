@@ -4,8 +4,10 @@
       <header class="section-header">
         <h3>Facts</h3>
         <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque
+          People choose our system for its user-friendly features, time-saving
+          automation, and data accuracy, making tuition management effortless
+          and enhancing the overall educational experience for both teachers and
+          students.
         </p>
       </header>
 
@@ -32,7 +34,7 @@
       </div>
 
       <div class="facts-img">
-        <img src="img/facts-img.png" alt="" class="img-fluid" />
+        <img src="/img/tuition-management-system.png" alt="" class="img-fluid" />
       </div>
     </div>
   </section>
