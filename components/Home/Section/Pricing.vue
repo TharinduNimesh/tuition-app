@@ -1,79 +1,5 @@
-<script>
-export default {
-  data() {
-    return {
-      isAnnually: true,
-      cards: [
-        {
-          title: "Basic",
-          price: "$199.99",
-          storage: "500 GB Storage",
-          users: "5 Users Allowed",
-          send: "Send up to 20 GB",
-          isActive: false,
-        },
-        {
-          title: "Professional",
-          price: "$249.99",
-          storage: "1 TB Storage",
-          users: "5 Users Allowed",
-          send: "Send up to 20 GB",
-          isActive: true,
-        },
-        {
-          title: "Master",
-          price: "$399.99",
-          storage: "2 TB Storage",
-          users: "10 Users Allowed",
-          send: "Send up to 20 GB",
-          isActive: false,
-        },
-        {
-          title: "Master",
-          price: "$399.99",
-          storage: "2 TB Storage",
-          users: "10 Users Allowed",
-          send: "Send up to 20 GB",
-          isActive: false,
-        },
-        {
-          title: "Master",
-          price: "$399.99",
-          storage: "2 TB Storage",
-          users: "10 Users Allowed",
-          send: "Send up to 20 GB",
-          isActive: false,
-        },
-        // Add More Card
-      ],
-    };
-  },
-  methods: {
-    togglePrices(isAnnually) {
-      this.isAnnually = isAnnually;
-
-      this.cards.forEach((card) => {
-        if (isAnnually) {
-          // Set Annually prices
-          card.price = "$199.99";
-        } else {
-          // Set Monthly prices
-          if (card.title === "Basic") {
-            card.price = "$19.99";
-          } else if (card.title === "Professional") {
-            card.price = "$24.99";
-          } else if (card.title === "Master") {
-            card.price = "$39.99";
-          }
-        }
-      });
-    },
-  },
-};
-</script>
-
 <template>
-  <div class="container py-5">
+  <section class="py-5 bg-gray">
     <div class="section-header">
       <h3>Our Price</h3>
     </div>
@@ -86,67 +12,56 @@ export default {
       >
         <button
           class="toggle-button btn btn-primary"
-          @click="togglePrices(true)"
-          :disabled="isAnnually"
+          @click="togglePrices('annually')"
+          :disabled="category === 'annually'"
         >
           Annually
         </button>
         <button
           class="toggle-button btn btn-primary"
-          @click="togglePrices(false)"
-          :disabled="!isAnnually"
+          @click="togglePrices('monthly')"
+          :disabled="category === 'monthly'"
         >
           Monthly
         </button>
       </div>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-md-4" v-for="(card, index) in cards" :key="index">
-        <div class="card mb-4" :class="{ active: card.isActive }">
-          <div class="card-body shadow-lg">
-            <h5 class="card-title text-center">{{ card.title }}</h5>
-            <h1 class="card-price text-center">{{ card.price }}</h1>
-
-            <div v-if="card.storage">
-              <hr />
-              <p class="card-text text-center">
-                <Icon name="ic:sharp-verified" />
-                {{ card.storage }}
-              </p>
-            </div>
-
-            <div v-if="card.users">
-              <hr />
-              <p class="card-text text-center">
-                <Icon name="ic:sharp-verified" />
-                {{ card.users }}
-              </p>
-            </div>
-
-            <div v-if="card.send">
-              <hr />
-              <p class="card-text text-center">
-                <Icon name="ic:sharp-verified" />
-                {{ card.send }}
-              </p>
-            </div>
-
-            <hr />
-            <div class="d-flex justify-content-center">
-              <button
-                type="button"
-                class="btn btn-primary active"
-                data-bs-toggle="button"
-                autocomplete="off"
-                aria-pressed="true"
-              >
-                choose plan
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="row justify-content-center gap-4 py-5">
+      <HomePriceCard
+        v-for="card in cards"
+        :key="card.title"
+        :name="card.title"
+        :price="card.price[category]"
+        :features="card.features"
+        :is-active="card.isActive"
+        :content="card.content"
+      />
     </div>
-  </div>
-</template>  
+  </section>
+</template>
+
+<script>
+import cards from "~/assets/css/home/packages";
+
+export default {
+  data() {
+    return {
+      category: "annually",
+      cards,
+    };
+  },
+  methods: {
+    togglePrices(category) {
+      this.category = category;
+    },
+  },
+};
+</script>
+
+<style scoped>
+.bg-gray {
+  background-color: rgb(240, 240, 240);
+  overflow-x: hidden;
+}
+</style>
