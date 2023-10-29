@@ -32,6 +32,7 @@ useHead({
       <HomeSectionTestimonials />
 
       <HomeSectionContact />
+      <!-- #contact -->
     </main>
 
     <HomeSectionFooter />
