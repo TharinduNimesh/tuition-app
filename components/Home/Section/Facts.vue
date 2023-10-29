@@ -44,7 +44,3 @@
 <script>
 export default {};
 </script>
-
-<style scoped>
-@import url("~/assets/css/home/index.css");
-</style>

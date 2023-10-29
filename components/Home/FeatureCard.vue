@@ -15,7 +15,3 @@ export default {
   props: ["icon", "title", "description"],
 };
 </script>
-
-<style scoped>
-@import url("~/assets/css/home/index.css");
-</style>

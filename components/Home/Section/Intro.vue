@@ -102,8 +102,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("~/assets/css/home/index.css");
-
 .icon {
   font-size: 4rem;
 }

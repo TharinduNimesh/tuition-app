@@ -9,7 +9,3 @@ export default {
   props: ["name", "path", "isActive"],
 };
 </script>
-
-<style>
-@import url("~/assets/css/home/index.css");
-</style>

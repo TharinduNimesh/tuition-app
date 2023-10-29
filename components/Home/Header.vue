@@ -29,7 +29,3 @@ export default {
   inject: ["isScrolled"]
 };
 </script>
-
-<style scoped>
-@import url("~/assets/css/home/index.css");
-</style>

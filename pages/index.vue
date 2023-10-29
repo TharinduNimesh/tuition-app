@@ -32,7 +32,6 @@ useHead({
       <HomeSectionTestimonials />
 
       <HomeSectionContact />
-      <!-- #contact -->
     </main>
 
     <HomeSectionFooter />
@@ -73,8 +72,8 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url("~/assets/css/home/index.css");
+<style>
+@import url("~/assets/css/home.css");
 .back-to-top {
   display: flex;
   justify-content: center;
@@ -86,7 +85,7 @@ export default {
   transform: translateY(-5px);
 }
 
-.icon {
+.back-to-top .icon {
   color: #fff;
   font-size: 2rem;
 }

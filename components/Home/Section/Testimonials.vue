@@ -18,7 +18,3 @@
     </div>
   </section>
 </template>
-
-<style scoped>
-@import url("~/assets/css/home/index.css");
-</style>

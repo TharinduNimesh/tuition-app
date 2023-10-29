@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import cards from "~/assets/css/home/packages";
+import cards from "~/assets/data/pricing-packages.js";
 
 export default {
   data() {

@@ -25,7 +25,6 @@ export default {};
 </script>
 
 <style scoped>
-@import url("~/assets/css/home/index.css");
 
 img {
   width: 200px;
