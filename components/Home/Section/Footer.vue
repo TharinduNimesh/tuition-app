@@ -4,9 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>GuruGo</h3>
+            <h3>Classmate</h3>
             <p>
-              GuruGo is a comprehensive tuition management system designed to
+              Classmate is a comprehensive tuition management system designed to
               revolutionize education administration. It offers a seamless blend
               of fee management, class scheduling, attendance tracking, robust
               communication tools, and efficient enrollment management.
@@ -98,7 +98,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>GuruGo</strong>. All Rights Reserved.
+        &copy; Copyright <strong>Classmate</strong>. All Rights Reserved.
       </div>
       <div class="credits">
         Designed & Developed by

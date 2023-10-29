@@ -4,13 +4,13 @@
       <header class="section-header wow fadeInUp">
         <h3>Services</h3>
         <p>
-          GuruGo is a comprehensive tuition management system designed to
+          Classmate is a comprehensive tuition management system designed to
           revolutionize education administration. It offers a seamless blend of
           fee management, class scheduling, attendance tracking, robust
           communication tools, insightful performance analytics, and efficient
           enrollment management. This all-in-one platform empowers educators and
           institutions to streamline operations, enhance the learning
-          experience, and drive academic success. GuruGo is your partner in
+          experience, and drive academic success. Classmate is your partner in
           managing every aspect of education with simplicity, precision, and
           efficiency.
         </p>

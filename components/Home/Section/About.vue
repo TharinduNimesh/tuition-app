@@ -4,7 +4,7 @@
       <header class="section-header">
         <h3>About Us</h3>
         <p>
-          <strong>GuruGo</strong>, the innovative tuition management system, is
+          <strong>Classmate</strong>, the innovative tuition management system, is
           a creation of <strong>Eversoft IT Solutions</strong> in Sri Lanka. Our
           passion for education and technology drives us to empower educators
           and institutions with a user-friendly, comprehensive solution that
@@ -38,7 +38,7 @@
             </div>
             <h2 class="title"><a href="#">Our Plan</a></h2>
             <p>
-              Our strategic roadmap entails ongoing innovation in GuruGo,
+              Our strategic roadmap entails ongoing innovation in Classmate,
               prioritizing user feedback, and establishing a global presence,
               ensuring educators and institutions receive the best tuition
               management support available.
@@ -55,7 +55,7 @@
             <h2 class="title"><a href="#">Our Vision</a></h2>
             <p>
               We envision a world where education is accessible, efficient, and
-              results-driven, where GuruGo becomes the leading global platform
+              results-driven, where Classmate becomes the leading global platform
               for tuition management, transforming learning for the better.
             </p>
           </div>

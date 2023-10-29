@@ -49,22 +49,22 @@
 <script>
 const contents = [
   {
-    title: "Simplify Success with GuruGo!",
+    title: "Simplify Success with Classmate!",
     image: "1.jpg",
     content:
-      "GuruGo Tuition Management System streamlines administrative tasks, empowers teachers, and boosts student success in individual and institutional settings.",
+      "Classmate Tuition Management System streamlines administrative tasks, empowers teachers, and boosts student success in individual and institutional settings.",
   },
   {
     title: "Empower Educators, Elevate Excellence!",
     image: "2.jpg",
     content:
-      "Elevate educational excellence with GuruGo Tuition Management System. Empower educators to focus on teaching, while we manage tuition and administrative tasks efficiently.",
+      "Elevate educational excellence with Classmate Tuition Management System. Empower educators to focus on teaching, while we manage tuition and administrative tasks efficiently.",
   },
   {
     title: "Unlock Your School's Potential!",
     image: "3.jpg",
     content:
-      "Unlock the full potential of your education institution with GuruGo Tuition Management System. Manage tuition, classes, and student data effortlessly for educational success.",
+      "Unlock the full potential of your education institution with Classmate Tuition Management System. Manage tuition, classes, and student data effortlessly for educational success.",
   },
 ];
 export default {

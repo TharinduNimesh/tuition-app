@@ -1,5 +1,5 @@
 <template>
-  <section class="py-5 bg-gray">
+  <section class="py-5 bg-gray" id="pricing">
     <div class="section-header">
       <h3>Our Price</h3>
     </div>

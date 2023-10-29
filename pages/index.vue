@@ -1,11 +1,11 @@
 <script setup>
 useHead({
-  title: "GuruGO | Tuition Management System",
+  title: "Classmate | Tuition Management System",
   meta: [
     {
       name: "description",
       content:
-        "GuruGo is the all-in-one tuition management system, empowering teachers and institutions to simplify tuition, scheduling, and student performance tracking for educational success.",
+        "Classmate is the all-in-one tuition management system, empowering teachers and institutions to simplify tuition, scheduling, and student performance tracking for educational success.",
     },
   ],
 });

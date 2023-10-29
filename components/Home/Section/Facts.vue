@@ -13,23 +13,23 @@
 
       <div class="row counters">
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">274</span>
+          <span data-toggle="counter-up">2000</span>
           <p>STUDENTS</p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">421</span>
+          <span data-toggle="counter-up">400</span>
           <p>TEACHERS</p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">1,364</span>
+          <span data-toggle="counter-up">80</span>
           <p>INSTITUTIONS</p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">18</span>
-          <p>Hard Workers</p>
+          <span data-toggle="counter-up">800</span>
+          <p>REVIEWS</p>
         </div>
       </div>
 
