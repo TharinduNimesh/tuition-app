@@ -1,10 +1,10 @@
 <template>
   <section class="py-5 bg-gray" id="pricing">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <h3>Our Price</h3>
     </div>
 
-    <div class="d-flex justify-content-center pb-4">
+    <div class="d-flex justify-content-center pb-4" data-aos="fade-up">
       <div
         class="btn-group item-center text-center"
         role="group"
@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <div class="row justify-content-center gap-4 py-5">
+    <div class="row justify-content-center gap-4 py-5" data-aos="fade-up">
       <HomePriceCard
         v-for="card in cards"
         :key="card.title"

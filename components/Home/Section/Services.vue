@@ -1,7 +1,7 @@
 <template>
   <section id="services">
     <div class="container">
-      <header class="section-header wow fadeInUp">
+      <header class="section-header" data-aos="fade-up">
         <h3>Services</h3>
         <p>
           Classmate is a comprehensive tuition management system designed to
@@ -16,11 +16,8 @@
         </p>
       </header>
 
-      <div class="row">
-        <div
-          class="col-lg-4 col-md-6 box wow bounceInUp"
-          data-wow-duration="1.4s"
-        >
+      <div class="row" data-aos="zoom-in-up">
+        <div class="col-lg-4 col-md-6 box">
           <div class="icon">
             <Icon name="ph:money-light" class="service-icon" />
           </div>
@@ -30,10 +27,7 @@
             health effortlessly for financial peace of mind.
           </p>
         </div>
-        <div
-          class="col-lg-4 col-md-6 box wow bounceInUp"
-          data-wow-duration="1.4s"
-        >
+        <div class="col-lg-4 col-md-6 box">
           <div class="icon">
             <Icon name="ph:clipboard-text-light" class="service-icon" />
           </div>
@@ -43,10 +37,7 @@
             efficient learning experience.
           </p>
         </div>
-        <div
-          class="col-lg-4 col-md-6 box wow bounceInUp"
-          data-wow-duration="1.4s"
-        >
+        <div class="col-lg-4 col-md-6 box">
           <div class="icon">
             <Icon name="ic:outline-list-alt" class="service-icon" />
           </div>
@@ -56,11 +47,7 @@
             class participation and performance.
           </p>
         </div>
-        <div
-          class="col-lg-4 col-md-6 box wow bounceInUp"
-          data-wow-delay="0.1s"
-          data-wow-duration="1.4s"
-        >
+        <div class="col-lg-4 col-md-6 box" data-wow-delay="0.1s">
           <div class="icon">
             <Icon
               name="material-symbols:android-messages-outline"
@@ -73,11 +60,7 @@
             collaboration and student success.
           </p>
         </div>
-        <div
-          class="col-lg-4 col-md-6 box wow bounceInUp"
-          data-wow-delay="0.1s"
-          data-wow-duration="1.4s"
-        >
+        <div class="col-lg-4 col-md-6 box" data-wow-delay="0.1s">
           <div class="icon">
             <Icon
               name="material-symbols:insert-chart-outline-sharp"
@@ -90,11 +73,7 @@
             providing targeted support for better learning outcomes.
           </p>
         </div>
-        <div
-          class="col-lg-4 col-md-6 box wow bounceInUp"
-          data-wow-delay="0.1s"
-          data-wow-duration="1.4s"
-        >
+        <div class="col-lg-4 col-md-6 box" data-wow-delay="0.1s">
           <div class="icon">
             <Icon
               name="material-symbols:switch-account-outline"

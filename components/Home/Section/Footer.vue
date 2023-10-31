@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer">
+  <footer id="footer" data-aos="fade-up">
     <div class="footer-top">
       <div class="container">
         <div class="row">

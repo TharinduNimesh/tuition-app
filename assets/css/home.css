@@ -59,6 +59,14 @@ textarea:focus {
   border: 1px solid #0571ff !important;
 }
 
+.btn {
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -110,7 +118,7 @@ textarea:focus {
   transition: all 0.5s;
 }
 
-#header #logo {
+/* #header #logo {
   float: left;
 }
 
@@ -118,7 +126,7 @@ textarea:focus {
   #header #logo {
     padding-left: 60px;
   }
-}
+} */
 
 #header #logo h1 {
   font-size: 34px;
@@ -359,12 +367,6 @@ textarea:focus {
 @media (min-width: 1024px) {
   #nav-menu-container {
     padding-right: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  #nav-menu-container {
-    display: none;
   }
 }
 

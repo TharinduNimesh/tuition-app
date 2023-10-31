@@ -3,7 +3,7 @@
     class="carousel-item active"
     :style="`background-image: url('/img/intro-carousel/${image}')`"
   >
-    <div class="carousel-container">
+    <div class="carousel-container" data-aos="zoom-in">
       <div class="carousel-content px-3 col-12 col-md-10 col-lg-8">
         <h2>{{ title }}</h2>
         <slot name="content" />
