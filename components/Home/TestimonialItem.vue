@@ -16,6 +16,3 @@ export default {
   props: ["name", "position", "image", "comment"],
 };
 </script>
-
-<style>
-</style>

@@ -66,7 +66,7 @@ export default {
 
 <style scoped>
 .bg-gray {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240) !important;
   overflow-x: hidden;
 }
 </style>

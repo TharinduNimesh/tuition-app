@@ -24,8 +24,8 @@
       </nav>
 
       <div class="d-none d-md-flex gap-2">
-        <a href="/login" class="btn btn-primary">Login</a>
-        <a href="/register" class="btn btn-outline-primary">Register</a>
+        <NuxtLink to="/login" class="btn btn-primary">Login</NuxtLink>
+        <NuxtLink to="/register" class="btn btn-outline-primary">Register</NuxtLink>
       </div>
       <div class="d-flex d-md-none sidebar">
         <Icon 

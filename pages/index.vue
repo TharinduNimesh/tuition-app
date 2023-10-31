@@ -61,7 +61,6 @@ export default {
   beforeMount() {
     window.addEventListener("scroll", () => {
       this.isShow = window.scrollY > 100;
-      let domElement = this.$el;
     });
   },
   provide() {
