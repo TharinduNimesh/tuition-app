@@ -1,7 +1,7 @@
 <template>
   <section id="contact" class="section-bg wow fadeInUp">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <h3>Contact Us</h3>
         <p>
           Our Contact Us page is your direct line to our support team. Reach out
@@ -10,7 +10,7 @@
         </p>
       </div>
 
-      <div class="row contact-info">
+      <div class="row contact-info" data-aos="fade-up">
         <div class="col-md-4">
           <div class="contact-address">
             <Icon class="icon" name="ic:sharp-location-on" />
@@ -35,7 +35,7 @@
           </div>
         </div>
       </div>
-      <FormContact />
+      <FormContact data-aos="fade-up" />
     </div>
   </section>
 </template>

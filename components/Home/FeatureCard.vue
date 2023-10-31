@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-4 box">
+  <div class="col-lg-4 box" data-aos="fade-up">
     <Icon :name="icon" class="featured-icon" />
     <h4 class="title">
       <a href="">{{ title }}</a>

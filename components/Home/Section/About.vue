@@ -1,7 +1,7 @@
 <template>
   <section id="about">
     <div class="container">
-      <header class="section-header">
+      <header class="section-header" data-aos="fade-up">
         <h3>About Us</h3>
         <p>
           <strong>Classmate</strong>, the innovative tuition management system, is
@@ -13,7 +13,7 @@
         </p>
       </header>
 
-      <div class="row about-cols h-100">
+      <div class="row about-cols h-100" data-aos="fade-up">
         <div class="col-md-4 h-100">
           <div class="about-col h-100">
             <div class="img">
