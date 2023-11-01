@@ -15,7 +15,7 @@
         v-for="feature in features"
         :key="feature.description"
         :class="isActive ? 'active' : ''"
-        class="feature d-flex flex-col align-items-center gap-3"
+        class="feature d-flex align-items-center gap-3"
       >
         <Icon name="emojione:white-heavy-check-mark" v-if="feature.status" />
         <Icon name="emojione:cross-mark-button" v-else />

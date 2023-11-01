@@ -1,5 +1,5 @@
 <template>
-  <form class="mb-3" action="index.html" method="POST">
+  <form class="mb-3" method="POST">
     <SystemInput
       label="Email Address"
       placeholder="Enter your email address"
@@ -9,24 +9,21 @@
       label="Password"
       placeholder="············"
       type="password"
-      :addForgotPassword="true"
+      path="/"
+      v-model="form.password"
+    />
+    <SystemInput
+      label="Confirm Password"
+      placeholder="············"
+      type="password"
       path="/"
       v-model="form.password"
     />
     <div class="mb-3">
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          v-model="form.rememberMe"
-        />
-        <label class="form-check-label" for="remember-me">Remember Me</label>
-      </div>
-    </div>
-    <div class="mb-3">
-      <button type="button" class="btn btn-primary d-grid w-100">
-        Sign in
-      </button>
+      <button 
+        type="button"
+        class="btn btn-primary d-grid w-100" 
+        @click="next(2)">Continue</button>
     </div>
   </form>
 </template>
@@ -43,5 +40,6 @@ export default {
       form,
     };
   },
+  props: ["next"],
 };
 </script>
