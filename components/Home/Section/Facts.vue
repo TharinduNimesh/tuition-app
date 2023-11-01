@@ -60,7 +60,7 @@ export default {
   mounted() {
     window.addEventListener("scroll", () => {
       const target = document.getElementById("facts");
-      if (window.scrollY > target.offsetTop - 200) {
+      if (window.scrollY > target?.offsetTop - 200) {
         this.countUp("students", 2000);
         this.countUp("teachers", 400);
         this.countUp("institutions", 80);
