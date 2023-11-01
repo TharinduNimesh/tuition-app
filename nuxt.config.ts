@@ -3,7 +3,4 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["bootstrap/dist/css/bootstrap.min.css"],
   modules: ["nuxt-icon"],
-  plugins: [
-    { src: '~/plugins/aos', mode: 'client' },
-  ],
 });
