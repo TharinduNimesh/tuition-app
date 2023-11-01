@@ -103,7 +103,7 @@ export default {
 
 <style scoped>
 .icon {
-  color: #338bff;
+  color: #696cff;
   font-size: 4rem;
 }
 </style>

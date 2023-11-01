@@ -8,6 +8,12 @@ useHead({
         "Classmate is the all-in-one tuition management system, empowering teachers and institutions to simplify tuition, scheduling, and student performance tracking for educational success.",
     },
   ],
+  link: [
+    {
+      rel: 'stylesheet',
+      href: '/css/home.css',
+    }
+  ]
 });
 </script>
 <template>
@@ -72,7 +78,6 @@ export default {
 </script>
 
 <style>
-@import url("~/assets/css/home.css");
 .back-to-top {
   display: flex;
   justify-content: center;

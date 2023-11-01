@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Classmate</h3>
+            <h3 class="text-white">Classmate</h3>
             <p>
               Classmate is a comprehensive tuition management system designed to
               revolutionize education administration. It offers a seamless blend
@@ -102,7 +102,7 @@
       </div>
       <div class="credits">
         Designed & Developed by
-        <a href="https://www.eversoft.lk/">Eversoft IT Solutions.</a>
+        <a class="text-primary" href="https://www.eversoft.lk/">Eversoft IT Solutions.</a>
       </div>
     </div>
   </footer>

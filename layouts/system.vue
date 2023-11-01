@@ -35,7 +35,7 @@ useHead({
 </template>
 
 <style>
-@import url("~/assets/css/system/core.css");
-@import url("~/assets/css/system/theme-default.css");
-@import url("~/assets/css/system/index.css");
+@import url("/css/system/core.css");
+@import url("/css/system/theme-default.css");
+@import url("/css/system/index.css");
 </style>

@@ -18,7 +18,7 @@
                 </NuxtLink>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Welcome to Classmate! 👋</h4>
+              <h4 class="mb-2">Welcome to <strong>Classmate!</strong> 👋</h4>
               <p class="mb-4">
                 Please sign-in to your account and start the adventure
               </p>
@@ -98,7 +98,7 @@
 </template>
 
 <style scoped>
-@import url("~/assets/css/system/pages/page-auth.css");
+@import url("/css/system/pages/page-auth.css");
 
 .logo {
   width: 40px;

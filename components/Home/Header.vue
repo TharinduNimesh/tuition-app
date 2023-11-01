@@ -47,7 +47,7 @@ export default {
 .sidebar {
   width: 50px;
   height: 50px;
-  background-color: #338bff;
+  background-color: #696cff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
