@@ -1,74 +1,35 @@
 <template>
   <form class="mb-3" method="POST">
+    <div class="w-100 d-flex justify-content-center mb-3">
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="flexSwitchCheckChecked"
+          v-model="isAnnually"
+        />
+        <label
+          class="form-check-label"
+          :class="{
+            'text-primary': isAnnually,
+            'text-secondary': !isAnnually,
+          }"
+          >Annually</label
+        >
+      </div>
+    </div>
+
     <div class="row mb-3">
-      <div
-        class="col-12 package"
-        :class="{ active: packageName === 'individual' }"
-        @click="setPackageName('individual')"
-      >
-        <div class="d-flex align-items-center">
-          <div class="px-3">
-            <input
-              class="form-check-input"
-              name="package"
-              v-model="packageName"
-              type="radio"
-              value="individual"
-              id="flexCheckDefault"
-            />
-          </div>
-          <div class="d-flex flex-column">
-            <h6 class="font-bold">INDIVIDUAL</h6>
-            <p>Designed for a single teacher or tutor.</p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="col-12 package"
-        :class="{ active: packageName === 'institution' }"
-        @click="setPackageName('institution')"
-      >
-        <div class="d-flex align-items-center">
-          <div class="px-3">
-            <input
-              class="form-check-input"
-              name="package"
-              v-model="packageName"
-              type="radio"
-              value="institution"
-              id="flexCheckDefault"
-            />
-          </div>
-          <div class="d-flex flex-column">
-            <h6 class="font-bold">INSTITUTION</h6>
-            <p>Suitable for a single education center or branch.</p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="col-12 package"
-        :class="{ active: packageName === 'organization' }"
-        @click="setPackageName('organization')"
-      >
-        <div class="d-flex align-items-center">
-          <div class="px-3">
-            <input
-              class="form-check-input"
-              name="package"
-              v-model="packageName"
-              type="radio"
-              value="organization"
-              id="flexCheckDefault"
-            />
-          </div>
-          <div class="d-flex flex-column">
-            <h6 class="font-bold">ORGANIZATION</h6>
-            <p>Ideal for education center with multiple branches.</p>
-          </div>
-        </div>
-      </div>
+      <FormRegisterPackage
+        v-for="pkg in packages"
+        :key="pkg.title"
+        :name="pkg.title"
+        :price="pkg.price[method]"
+        :description="pkg.content"
+        :isActive="packageName === pkg.title"
+        :set="setPackageName"
+      />
     </div>
     <div class="row mb-3">
       <div class="col-md-6 mt-1 mt-md-0 order-2 order-md-1">
@@ -95,11 +56,15 @@
 </template>
 
 <script>
+import packages from "~/assets/data/pricing-packages.js";
+
 export default {
   props: ["next"],
   data() {
     return {
+      isAnnually: true,
       packageName: null,
+      packages,
     };
   },
   methods: {
@@ -111,33 +76,9 @@ export default {
     isButtonDisabled() {
       return this.packageName === null;
     },
+    method() {
+      return this.isAnnually ? "annually" : "monthly";
+    },
   },
 };
 </script>
-
-<style scoped>
-h6 {
-  font-weight: bolder;
-  color: #000;
-}
-
-h6,
-p {
-  margin: 0;
-}
-
-.package {
-  border: 1px solid #e5e5e5;
-  border-radius: 5px;
-  padding: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin: 2px 0;
-}
-
-.package:hover,
-.active {
-  border: 1px solid #696cff;
-  background-color: #696cff27;
-}
-</style>

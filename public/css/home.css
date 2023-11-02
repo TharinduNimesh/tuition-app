@@ -142,16 +142,6 @@ textarea:focus {
   transition: all 0.5s;
 }
 
-/* #header #logo {
-  float: left;
-}
-
-@media (min-width: 1024px) {
-  #header #logo {
-    padding-left: 60px;
-  }
-} */
-
 #header #logo h1 {
   font-size: 34px;
   margin: 0;

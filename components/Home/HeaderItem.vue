@@ -1,6 +1,6 @@
 <template>
   <li :class="{ 'menu-active': isActive }">
-    <a :href="path">{{ name }}</a>
+    <NuxtLink :href="path">{{ name }}</NuxtLink>
   </li>
 </template>
 
