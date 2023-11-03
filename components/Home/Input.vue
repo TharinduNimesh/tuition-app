@@ -8,7 +8,6 @@
         :type="type"
         class="form-control"
         :class="{
-          'is-valid': isValid && modelValue,
           'is-invalid': !isValid && modelValue,
         }"
         :placeholder="placeholder"

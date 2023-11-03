@@ -23,8 +23,9 @@ useHead({
               </div>
               <h4 class="mb-2">{{ detail.title }}</h4>
               <p class="mb-4">{{ detail.description }}</p>
-              <FormRegister1 v-show="page === 1" :next="updatePage" />
-              <FormRegister2 v-show="page === 2" :next="updatePage" />
+              <FormRegister1 v-if="page === 1" :next="updatePage" />
+              <FormRegister2 v-if="page === 2" :next="updatePage" />
+              <FormRegister3 v-if="page === 3" :next="updatePage" />
               <p class="d-md-flex text-center justify-content-center gap-1">
                 <span>{{ detail.question }}</span>
                 <NuxtLink :to="detail.path">
@@ -49,12 +50,19 @@ const details = [
     path: "/login",
   },
   {
+    title: "Check Your Inbox ✉️",
+    description: "A code has been sent to tharindunimesh.abc@gmail.com",
+    question: "I didn't get the code 😕",
+    answer: "Resend.",
+    path: "/",
+  },
+  {
     title: "Choose your package 💥",
     description:
       "Select the package that suits your needs. We have a variety of packages for you to choose from.",
     question: "I have no idea 😐",
     answer: "Learn more.",
-    path: "/",
+    path: "/pricing",
   },
   {
     title: "Make friends",
