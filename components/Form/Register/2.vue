@@ -10,6 +10,7 @@
         class="digit form-control"
         :autofocus="active === index"
         @keyup="focus($event)"
+        @keydown="validate($event)"
         maxlength="1"
         :data-index="index"
       />
@@ -51,9 +52,8 @@ export default {
     focus(event) {
       let focusedElement = document.activeElement;
       let index = focusedElement.dataset.index;
-      let value = String.fromCharCode(event.keyCode);
-      let isValid = this.isValidChar(value);
-      if (isValid) {
+      let value = event.key;
+      if (this.isNum(event)) {
         this.digit[index] = value;
         this.active = parseInt(index) + 1;
         if (this.active < this.count) {
@@ -61,11 +61,37 @@ export default {
           document.getElementById(id)?.focus();
         }
       } else {
-        this.digit[index] = null;
+        if (event.key === "Backspace" || event.key === "Delete") {
+          this.digit[index] = null;
+          this.active = parseInt(index) - 1;
+          if (this.active >= 0) {
+            let id = "input-" + this.active;
+            document.getElementById(id)?.focus();
+          }
+        }
       }
     },
-    isValidChar(value) {
-      return !isNaN(parseInt(value));
+    validate(event) {
+      if (
+        event.key === "Backspace" ||
+        event.key === "Delete" ||
+        event.key === "Tab" ||
+        event.key === "Escape" ||
+        event.key === "Enter"
+      ) {
+        return;
+      }
+      if (this.isNum(event)) {
+        return;
+      }
+
+      event.preventDefault();
+    },
+    isNum(event) {
+      if (event.key >= "0" && event.key <= "9") {
+        return true;
+      }
+      return false;
     },
   },
   computed: {
