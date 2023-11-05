@@ -6,25 +6,7 @@ useHead({
 
 <template>
   <NuxtLayout name="home">
-    <div class="col-lg-12 col-12">
-      <div class="home-intro position-relative">
-        <HomeIntro image="about-us.webp" />
-        <div
-          class="overlay position-absolute top-50 start-0 w-100 h-100 text-center text-white pt-0 pt-md-3"
-        >
-          <h1 class="mb-2 mb-md-4 text-lg fw-bolder">
-            Our mission is to make building websites easier for everyone.
-          </h1>
-          <p class="mb-2 mb-md-4 text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima, animi.
-          </p>
-          <a href="#scroll-target" class="btn btn-primary btn-lg"
-            >Read our story</a
-          >
-        </div>
-      </div>
-    </div>
-
+    <HomeIntro image="about-us.webp" />
     <section class="py-5 bg-light" id="scroll-target">
       <div class="container">
         <header class="section-header" data-aos="fade-up">
