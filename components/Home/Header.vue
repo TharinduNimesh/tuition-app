@@ -1,10 +1,10 @@
 <template>
-  <header 
+  <header
     id="header"
     :class="{
-      'header-scrolled': isScrolled
+      'header-scrolled': isScrolled,
     }"
-    >
+  >
     <div class="d-flex justify-content-between align-items-center px-2 px-md-5">
       <div id="logo">
         <h1>
@@ -14,32 +14,59 @@
 
       <nav id="nav-menu-container" class="d-none d-xl-flex">
         <ul class="nav-menu">
-          <HomeHeaderItem name="Home" path="#intro" :isActive="true" />
-          <HomeHeaderItem name="Fearues" path="#featured-services" />
-          <HomeHeaderItem name="About Us" path="#about" />
-          <HomeHeaderItem name="Services" path="#services" />
-          <HomeHeaderItem name="pricing" path="#pricing" />
-          <HomeHeaderItem name="Contact" path="#contact" />
+          <HomeHeaderItem
+            v-for="item in items"
+            :key="item.name"
+            :name="item.name"
+            :path="item.path"
+            :isActive="item.path === $route.path"
+          />
         </ul>
       </nav>
 
       <div class="d-none d-md-flex gap-2">
         <NuxtLink to="/login" class="btn btn-primary">Login</NuxtLink>
-        <NuxtLink to="/register" class="btn btn-outline-primary">Register</NuxtLink>
+        <NuxtLink to="/register" class="btn btn-outline-primary"
+          >Register</NuxtLink
+        >
       </div>
       <div class="d-flex d-md-none sidebar">
-        <Icon 
-          name="heroicons:bars-3-20-solid"
-          class="bars"
-        />
+        <Icon name="heroicons:bars-3-20-solid" class="bars" />
       </div>
     </div>
   </header>
 </template>
 
 <script>
+const items = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "About",
+    path: "/about",
+  },
+  {
+    name: "Features",
+    path: "/features",
+  },
+  {
+    name: "pricing",
+    path: "/pricing",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+];
 export default {
-  inject: ["isScrolled"]
+  data() {
+    return {
+      items,
+    };
+  },
+  inject: ["isScrolled"],
 };
 </script>
 
@@ -60,7 +87,6 @@ export default {
   color: #fff;
   width: 25px;
   height: 25px;
-
 }
 
 .sidebar:hover {

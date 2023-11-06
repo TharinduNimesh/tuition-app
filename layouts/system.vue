@@ -1,6 +1,5 @@
 <script setup>
 useHead({
-  title: "Login | Tuition Management System",
   script: [
     {
       src: "/js/helpers.js",

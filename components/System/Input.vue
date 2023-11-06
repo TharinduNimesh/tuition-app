@@ -16,8 +16,7 @@
         class="form-control"
         :placeholder="placeholder"
         :class="{
-          'is-invalid': !isValid,
-          'is-valid': isValid && modelValue,
+          'is-invalid': !isValid && modelValue,
         }"
         @input="$emit('update:modelValue', $event.target.value)"
       />

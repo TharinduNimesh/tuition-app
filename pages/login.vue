@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  title: "Login | Tuition Management System",
+});
+</script>
+
 <template>
   <NuxtLayout name="system">
     <div class="container-xxl">
@@ -22,7 +28,7 @@
               <FormLogin />
               <p class="d-md-flex text-center justify-content-center gap-1">
                 <span>New on our platform?</span>
-                <NuxtLink to="/">
+                <NuxtLink to="/register">
                   <span>Create an account</span>
                 </NuxtLink>
               </p>
