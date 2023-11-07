@@ -25,8 +25,8 @@
       </nav>
 
       <div class="d-none d-md-flex gap-2">
-        <NuxtLink to="/login" class="btn btn-primary">Login</NuxtLink>
-        <NuxtLink to="/register" class="btn btn-outline-primary"
+        <NuxtLink :to="url('app', '/login')" class="btn btn-primary">Login</NuxtLink>
+        <NuxtLink :to="url('app', '/register')" class="btn btn-outline-primary"
           >Register</NuxtLink
         >
       </div>
@@ -66,7 +66,7 @@ export default {
       items,
     };
   },
-  inject: ["isScrolled"],
+  inject: ["isScrolled", "url"],
 };
 </script>
 
