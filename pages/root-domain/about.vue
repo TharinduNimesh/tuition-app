@@ -69,11 +69,7 @@ useHead({
           <div
             class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center"
           >
-            <div
-              v-for="(member, index) in teamMembers"
-              :key="index"
-              class="col mb-5"
-            >
+            <div v-for="member in members" :key="member.name" class="col mb-5">
               <div class="text-center">
                 <img
                   class="img-fluid rounded-circle mb-4 px-4"
@@ -92,36 +88,12 @@ useHead({
 </template>
 
 <script>
+import members from "~/assets/data/members.js";
+
 export default {
   data() {
     return {
-      teamMembers: [
-        {
-          name: "John Doe",
-          position: "Founder & CEO",
-          image: "https://dummyimage.com/150x150/ced4da/6c757d",
-        },
-        {
-          name: "John Doe",
-          position: "CFO",
-          image: "https://dummyimage.com/150x150/ced4da/6c757d",
-        },
-        {
-          name: "John Doe",
-          position: "Operations Manager",
-          image: "https://dummyimage.com/150x150/ced4da/6c757d",
-        },
-        {
-          name: "John Doe",
-          position: "CTO",
-          image: "https://dummyimage.com/150x150/ced4da/6c757d",
-        },
-        {
-          name: "John Doe",
-          position: "CTO",
-          image: "https://dummyimage.com/150x150/ced4da/6c757d",
-        },
-      ],
+      members,
     };
   },
 };
