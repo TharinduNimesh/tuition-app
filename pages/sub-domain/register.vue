@@ -12,7 +12,7 @@ useHead({
           <div class="card">
             <div class="card-body">
               <div class="app-brand justify-content-center">
-                <NuxtLink to="/" class="app-brand-link gap-2">
+                <NuxtLink :to="url('/', '/')" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
                     <img src="/img/classmate.png" class="logo" />
                   </span>
@@ -87,6 +87,7 @@ export default {
       return this.details[this.page - 1];
     },
   },
+  inject: ["url"],
 };
 </script>
 
