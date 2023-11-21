@@ -5,14 +5,14 @@ useHead({
 </script>
 
 <template>
-  <NuxtLayout name="system">
+  <NuxtLayout name="auth">
     <div class="container-xxl">
       <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner">
           <div class="card">
             <div class="card-body">
               <div class="app-brand justify-content-center">
-                <NuxtLink to="/" class="app-brand-link gap-2">
+                <NuxtLink :to="url('/', '/')" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
                     <img src="/img/classmate.png" class="logo" />
                   </span>
@@ -39,6 +39,12 @@ useHead({
     </div>
   </NuxtLayout>
 </template>
+
+<script>
+export default {
+  inject: ["url"],
+};
+</script>
 
 <style scoped>
 @import url("/css/system/pages/page-auth.css");
